@@ -50,15 +50,7 @@ $(document).ready(function(){
 					
 					
 					
-						$("a").css("display","block");
-						$("a").css("opacity","0");
-					
-							$( "a" ).animate({
-								opacity: 1
-							  }, 500, function() {
-					
-					
-							  });
+						
 					
 					
 						
