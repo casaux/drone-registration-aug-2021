@@ -31,6 +31,7 @@ var djiList=[
 ["MG-A",["0Y8"]],
 ["MG-P",["0YS"]],
 ["MG-S",["0D7"]],
+["Mini 2",["3Q4"]],     
 ["P4 Multispecial",["1UD"]],    
 ["Phantom 3 4K",["P7A","O8D"]],
 ["Phantom 3 Advanced",["P76"]],
