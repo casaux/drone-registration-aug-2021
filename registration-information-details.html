@@ -75,6 +75,7 @@
          
          }
          }
+             
          
          /* DJI help text */
          $("#dji-help").html("<strong>Your DJI "+DJIModel+" serial number is 14 characters and will start with:<br> <span style='font-size:1.5rem; font-family:monaco'>"+DJIPrefix+"</span></strong>");
@@ -204,18 +205,22 @@
           
          if($(this).val()==2){
           $("#home-build").css("display","none");
+             $("#no-serial").css("display","none");
           $(".default-values").css("display","block");
          }
          else if($(this).val()==3){
           $("#home-build").css("display","none");
+             $("#no-serial").css("display","block");
           $(".default-values").css("display","block");
          }
          	   else if($(this).val()==4){
           $("#home-build").css("display","none");
+                   $("#no-serial").css("display","block");
           $(".default-values").css("display","block");
          }
          else {
           $("#home-build").css("display","block");
+             $("#no-serial").css("display","block");
           $(".default-values").css("display","none");
          }
          
@@ -599,22 +604,24 @@
                      <div class="au-form-group">
                         <label for="text-input-block3" class="au-label">Serial number</label>
                         <span class="au-hint-text">
-                        Please enter your drone serial number. <a href="casa-drone-serial-numbers.html" target="_blank">How do I find this?</a> 
+                        Please enter your drone serial number. <strong><a href="casa-drone-serial-numbers.html" target="_blank">How do I find this?</a></strong> 
                         </span>
                         <div id="dji-help" class="au-callout" style="margin-bottom: 1rem; display: none">
                         </div>
-                     </div>
                      <input class="au-text-input au-text-input--block" name="text-input-block3" id="text-input-block3" type="text" value="">
+                         </div>
                      <div>
                         <span class="" style="display:none;"><strong>Serial number incorrect for this drone type</strong></span>
                         </section>	
                      </div>
+                   <div id="no-serial">
                      <div class="au-form-group">
                         <label class="au-control-input">
                         <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="no-serial">
                         <span class="au-control-input__text">No serial number available</span>
                         </label>
                      </div>
+                   </div>
                      <div id="no-serial-callout" style="display:none;">
                         <div class="au-form-group">
                            <p class="au-callout">
