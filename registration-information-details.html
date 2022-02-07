@@ -189,13 +189,13 @@
          });
          
          
-         $("#no-serial").change(function() {
+         $("#no-serial-1").change(function() {
          
          if ( $(this).is(':checked') ) {
-         $("#text-input-block3").prop('disabled', true);
+        
          $("#no-serial-callout").css("display","block");
          } else {
-         $("#text-input-block3").prop('disabled', false);
+        
          $("#no-serial-callout").css("display","none");
          }
          
@@ -210,12 +210,12 @@
          }
          else if($(this).val()==3){
           $("#home-build").css("display","none");
-             $("#no-serial").css("display","block");
+             $("#no-serial").css("display","none");
           $(".default-values").css("display","block");
          }
          	   else if($(this).val()==4){
           $("#home-build").css("display","none");
-                   $("#no-serial").css("display","block");
+                   $("#no-serial").css("display","none");
           $(".default-values").css("display","block");
          }
          else {
@@ -316,7 +316,7 @@
          
          $("#home-build").css("display","none");
          $("#other-model-free").css("display","none");
-                     $("#weight-info").css("display","block");
+                     $("#weight-info").css("display","none");
                      
          
          if($(this).find("option:selected").text()=="Other"){
@@ -603,11 +603,12 @@
                       
                      <div class="au-form-group">
                         <label for="text-input-block3" class="au-label">Serial number</label>
+                         <div id="dji-help" class="au-callout" style="margin-bottom: 1rem; display: none">
+                        </div>
                         <span class="au-hint-text">
                         Please enter your drone serial number. <strong><a href="casa-drone-serial-numbers.html" target="_blank">How do I find this?</a></strong> 
                         </span>
-                        <div id="dji-help" class="au-callout" style="margin-bottom: 1rem; display: none">
-                        </div>
+                        
                      <input class="au-text-input au-text-input--block" name="text-input-block3" id="text-input-block3" type="text" value="">
                          </div>
                      <div>
@@ -617,7 +618,7 @@
                    <div id="no-serial">
                      <div class="au-form-group">
                         <label class="au-control-input">
-                        <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="no-serial">
+                        <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="no-serial-1">
                         <span class="au-control-input__text">No serial number available</span>
                         </label>
                      </div>
